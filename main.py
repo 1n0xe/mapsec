@@ -35,14 +35,14 @@ def main():
 
 
     while True:
-        print("\nChoose an option:")
+        print("\nChoisir une étape:")
         print("1. Enumeration")
         print("2. Detection")
         print("3. Exploitation")
         print("4. Post-Exploitation")
-        print("5. Exit")
+        print("5. Quitter\n")
 
-        choice = input("Enter your choice: ")
+        choice = input("Entrez votre choix:")
 
         if choice == "1":
             run_enumeration()
@@ -53,10 +53,10 @@ def main():
         elif choice == "4":
             run_post_exploitation()
         elif choice == "5":
-            print("Exiting Pentest Tool.")
+            print("Fermeture de MAPSEC")
             break
         else:
-            print("Invalid choice. Please enter a valid option.")
+            print("Choix incorrect. Veuillez saisir un autre chiffre.")
 
 if __name__ == "__main__":
     main()
