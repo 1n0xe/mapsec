@@ -24,7 +24,7 @@ def main():
     print("              @@@/***/****....,,,,,,,,,,,....*****/*****@@@              //         // //      // //       ////////  ////////   //////")
     print("            @@@%  @@@@@**/*/*/..........,****/****@@@@@@@")
     print("              @@@.........%@@@@@@@@@@@@@@@@@@@@#, ...@@@                 Bienvenue sur MAPSEC, outil d'assistance au pentest :")
-    print("                @@@ ............,..,,,*,,,,,,,,... @@@                     Guide du débutant à l'expert,")
+    print("                @@@ ............,..,,,*,,,,,,,,... @@@                    Guide du débutant à l'expert,")
     print("                  @@@  ....,.......,,,,,,,,,,....@@@                      De l'énumération à la post-exploitation.")
     print("                    @@@...........,,,,,,,,.... @@@                        Explorez, identifiez, exploitez !")
     print("                       @@@.........,,,,...  .@@@")
