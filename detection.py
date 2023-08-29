@@ -9,6 +9,7 @@ def run_detection():
 
     print("Ports identifiés précédemment :", identified_ports)
     print("\nOutils de détection :")
+    print("\n(Valable pour tous les ports : chercher des vulnérabilités de version avec Searchsploit)")
     
     for port in identified_ports:
         print("\nPort:", port)
