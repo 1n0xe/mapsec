@@ -1,58 +1,111 @@
-# MAPSEC
+# Outil de Pentest
 
-Description concise de votre outil de pentest. Expliquez en quoi il consiste, son objectif et les fonctionnalités principales.
+L'**Outil de Pentest** est un programme Python conçu pour simplifier et guider les tests de pénétration en fournissant un cadre organisé pour mener des évaluations de sécurité informatique de manière méthodique. Il offre des étapes claires pour chaque phase du pentest, des suggestions d'outils et la possibilité de personnaliser les résultats.
 
 ## Table des matières
 
-- [Aperçu](#aperçu)
-- [Installation](#installation)
+- [Introduction](#introduction)
 - [Utilisation](#utilisation)
-- [Fonctionnalités](#fonctionnalités)
-- [Captures d'écran](#captures-décran)
-- [Contributions](#contributions)
-- [Licence](#licence)
+  - [Installation](#installation)
+  - [Structure](#structure)
+  - [Exécution](#exécution)
+- [Détails Techniques](#détails-techniques)
+  - [Fichiers Principaux](#fichiers-principaux)
+  - [Fonctions Clés](#fonctions-clés)
+  - [Utilisation de Bibliothèques Python](#utilisation-de-bibliothèques-python)
+  - [Personnalisation](#personnalisation)
+- [Pour Aller Plus Loin](#pour-aller-plus-loin)
+  - [Création d'une Version Plus Complète](#création-dune-version-plus-complète)
+  - [Fonctionnalités Supplémentaires](#fonctionnalités-supplémentaires)
+  - [Marketing](#marketing)
+  - [Version Payante](#version-payante)
 
-## Aperçu
+## Introduction
 
-Fournissez une brève description de l'outil et éventuellement une démonstration de son utilisation en texte ou en image.
+L'**Outil de Pentest** vise à simplifier le processus de test de pénétration en guidant les utilisateurs à travers les différentes étapes d'une évaluation de sécurité. Il offre une approche structurée qui permet aux pentesters de mener des tests de manière méthodique et organisée. Cet outil a été conçu pour les professionnels de la cybersécurité et les chercheurs en sécurité informatique, ainsi que pour toute personne souhaitant améliorer la sécurité de ses systèmes.
 
-## Installation
-
-Expliquez comment installer et configurer l'outil sur le système de l'utilisateur. Cela pourrait inclure des instructions pour installer les dépendances, créer un environnement virtuel, etc.
-
-Exemple d'installation :
-```bash
-git clone https://github.com/votre-utilisateur/votre-projet.git
-cd votre-projet
-pip install -r requirements.txt
-```
+Pour en savoir plus sur l'objectif et les fonctionnalités de l'outil, consultez la [page d'introduction](documentation/introduction.md).
 
 ## Utilisation
 
-Fournissez des exemples concrets pour montrer comment utiliser votre outil. Donnez des instructions étape par étape et expliquez les différentes options de ligne de commande ou les paramètres nécessaires.
+### Installation
 
-Exemple d'utilisation :
-```bash
-python pentest_tool.py -c config.yaml -t target.com
-```
+Pour utiliser l'**Outil de Pentest**, vous devez disposer d'un environnement Python fonctionnel sur votre système. Suivez ces étapes pour l'installation :
 
-## Fonctionnalités
+1. Téléchargez le code source de l'outil à partir du référentiel GitHub.
+2. Assurez-vous que Python (version recommandée) est installé sur votre système.
+3. Ouvrez un terminal dans le répertoire contenant le code source.
+4. Exécutez le programme en entrant la commande `python main.py`.
 
-Énumérez les principales fonctionnalités de votre outil de pentest. Divisez-les en sections pour une meilleure lisibilité.
+### Structure
 
-- **Fonctionnalité 1 :** Description de la fonctionnalité 1.
-- **Fonctionnalité 2 :** Description de la fonctionnalité 2.
+L'outil est organisé en plusieurs fichiers, chacun correspondant à une phase spécifique du test de pénétration. Voici la structure du répertoire :
 
-## Captures d'écran
+- `main.py` : Point d'entrée de l'application, guide les utilisateurs à travers les différentes étapes.
+- `enumeration.py` : Phase d'énumération, collecte des informations sur la cible.
+- `identification.py` : Phase d'identification, identifie les services et les ports ouverts.
+- `detection.py` : Phase de détection, recherche de vulnérabilités potentielles.
+- `exploitation.py` : Phase d'exploitation, analyse les possibilités d'exploitation.
+- `post_exploitation.py` : Phase de post-exploitation, présente les options de persistance et d'élévation de privilèges.
 
-Si possible, incluez des captures d'écran ou des GIF animés pour montrer l'interface utilisateur de votre outil et ses résultats.
+### Exécution
 
-## Contributions
+Lorsque vous exécutez `main.py`, l'outil affiche un menu interactif qui permet à l'utilisateur de choisir l'étape à partir de laquelle il souhaite commencer le test de pénétration. Chaque étape est guidée par des instructions claires, des suggestions d'outils et la possibilité de personnaliser les résultats.
 
-Indiquez comment les contributeurs peuvent participer à votre projet. Vous pouvez inclure des informations sur la façon de signaler des problèmes, de proposer des fonctionnalités ou de soumettre des pull requests.
+Pour plus de détails sur l'utilisation de l'outil, consultez la [page d'utilisation](documentation/utilisation.md).
 
-## Licence
+## Détails Techniques
 
-Indiquez la licence sous laquelle votre projet est publié. Par exemple :
+### Fichiers Principaux
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+1. `main.py` : Point d'entrée du programme. Il guide l'utilisateur à travers les différentes étapes du test de pénétration.
+2. `enumeration.py` : Contient les fonctions pour la collecte d'informations sur la cible.
+3. `identification.py` : Contient les fonctions pour identifier les services et les ports ouverts.
+4. `detection.py` : Contient les fonctions pour détecter les vulnérabilités potentielles.
+5. `exploitation.py` : Contient les fonctions pour explorer les options d'exploitation.
+6. `post_exploitation.py` : Contient les fonctions pour présenter les options de post-exploitation.
+
+### Fonctions Clés
+
+- `run_enumeration()` (enumeration.py) : Gère la phase d'énumération, collecte des informations sur la cible.
+- `run_identification()` (identification.py) : Gère la phase d'identification, identifie les services et les ports ouverts.
+- `run_detection()` (detection.py) : Gère la phase de détection, recherche de vulnérabilités potentielles.
+- `run_exploitation()` (exploitation.py) : Gère la phase d'exploitation, analyse les possibilités d'exploitation.
+- `run_post_exploitation()` (post_exploitation.py) : Gère la phase de post-exploitation, présente les options de persistance et d'élévation de privilèges.
+
+### Utilisation de Bibliothèques Python
+
+L'outil utilise principalement les fonctionnalités de base de Python pour interagir avec l'utilisateur et gérer les étapes du test de pénétration. Les fonctions `input()` et `print()` sont utilisées pour l'interaction en ligne de commande. Les listes et les dictionnaires sont employés pour stocker les données.
+
+### Personnalisation
+
+Les fichiers `detection.py` et `exploitation.py` sont conçus pour être personnalisables en fonction des besoins de l'utilisateur. Vous pouvez modifier les outils de détection et d'exploitation, ajouter de nouvelles options et personnaliser les descriptions.
+
+Pour des détails complets sur les détails techniques de l'outil, consultez la [page des détails techniques](documentation/details_techniques.md).
+
+## Pour Aller Plus Loin
+
+### Création d'une Version Plus Complète
+
+Pour aller plus loin avec l'**Outil de Pentest**, envisagez de créer une version plus complète destinée aux professionnels de la sécurité et aux entreprises. Cette version pourrait inclure une base de données de vulnérabilités mise à jour, des intégrations tierces et la prise en charge d'environnements complexes.
+
+### Fonctionnalités Supplémentaires
+
+Pour enrichir l'expérience des utilisateurs, ajoutez des fonctionnalités telles que la prise en charge de nouvelles étapes de test, la génération de rapports automatisés et la collaboration entre équipes.
+
+### Marketing
+
+Promouvez l'outil en créant un site Web dédié, en organisant des webinaires et en partageant des ressources éducatives. Établissez des partenariats avec des entreprises de cybersécurité pour augmenter la visibilité de l'outil.
+
+### Version Payante
+
+Envisagez de proposer une version payante de l'outil qui offre des fonctionnalités avancées, telles que des commandes exactes pour chaque outil, des scénarios de test pré-configurés et une assistance technique prioritaire.
+
+---
+
+L'**Outil de Pentest** est un projet en évolution constante. Votre contribution, vos idées et vos commentaires sont les bienvenus pour améliorer l'outil et en faire une ressource précieuse pour les professionnels de la sécurité informatique.
+
+Pour des détails complets sur l'outil, veuillez consulter la documentation détaillée dans le répertoire [documentation](documentation/).
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
