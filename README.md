@@ -24,8 +24,6 @@ MAPSEC est un programme Python conçu pour simplifier et guider les tests de pé
 
 Cet outil vise à simplifier le processus de test de pénétration en guidant les utilisateurs à travers les différentes étapes d'une évaluation de sécurité. Il offre une approche structurée qui permet aux pentesters de mener des tests de manière méthodique et organisée. Cet outil a été conçu pour les professionnels de la cybersécurité et les chercheurs en sécurité informatique, ainsi que pour toute personne souhaitant améliorer la sécurité de ses systèmes.
 
-Pour en savoir plus sur l'objectif et les fonctionnalités de l'outil, consultez la [page d'introduction](documentation/introduction.md).
-
 ## Utilisation
 
 ### Installation
@@ -55,8 +53,6 @@ L'outil est organisé en plusieurs fichiers, chacun correspondant à une phase s
 
 Lorsque vous exécutez `main.py`, l'outil affiche un menu interactif qui permet à l'utilisateur de choisir l'étape à partir de laquelle il souhaite commencer le test de pénétration. Chaque étape est guidée par des instructions claires, des suggestions d'outils et la possibilité de personnaliser les résultats.
 
-Pour plus de détails sur l'utilisation de l'outil, consultez la [page d'utilisation](documentation/utilisation.md).
-
 ## Détails Techniques
 
 ### Fichiers Principaux
@@ -84,13 +80,9 @@ L'outil utilise principalement les fonctionnalités de base de Python pour inter
 
 Les fichiers `detection.py` et `exploitation.py` sont conçus pour être personnalisables en fonction des besoins de l'utilisateur. Vous pouvez modifier les outils de détection et d'exploitation, ajouter de nouvelles options et personnaliser les descriptions.
 
-Pour des détails complets sur les détails techniques de l'outil, consultez la [page des détails techniques](documentation/details_techniques.md).
-
 ---
 
 **MAPSEC** est un projet en évolution constante. Votre contribution, vos idées et vos commentaires sont les bienvenus pour améliorer l'outil et en faire une ressource précieuse pour les professionnels de la sécurité informatique.
-
-Pour des détails complets sur l'outil, veuillez consulter la documentation détaillée dans le répertoire [documentation](documentation/).
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
