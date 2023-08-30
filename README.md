@@ -1,6 +1,6 @@
-# Outil de Pentest
+# MAPSEC
 
-L'**Outil de Pentest** est un programme Python conçu pour simplifier et guider les tests de pénétration en fournissant un cadre organisé pour mener des évaluations de sécurité informatique de manière méthodique. Il offre des étapes claires pour chaque phase du pentest, des suggestions d'outils et la possibilité de personnaliser les résultats.
+MAPSEC est un programme Python conçu pour simplifier et guider les tests de pénétration en fournissant un cadre organisé pour mener des évaluations de sécurité informatique de manière méthodique. Il offre des étapes claires pour chaque phase du pentest, des suggestions d'outils et la possibilité de personnaliser les résultats.
 
 ## Table des matières
 
@@ -22,7 +22,7 @@ L'**Outil de Pentest** est un programme Python conçu pour simplifier et guider 
 
 ## Introduction
 
-L'**Outil de Pentest** vise à simplifier le processus de test de pénétration en guidant les utilisateurs à travers les différentes étapes d'une évaluation de sécurité. Il offre une approche structurée qui permet aux pentesters de mener des tests de manière méthodique et organisée. Cet outil a été conçu pour les professionnels de la cybersécurité et les chercheurs en sécurité informatique, ainsi que pour toute personne souhaitant améliorer la sécurité de ses systèmes.
+Cet outil vise à simplifier le processus de test de pénétration en guidant les utilisateurs à travers les différentes étapes d'une évaluation de sécurité. Il offre une approche structurée qui permet aux pentesters de mener des tests de manière méthodique et organisée. Cet outil a été conçu pour les professionnels de la cybersécurité et les chercheurs en sécurité informatique, ainsi que pour toute personne souhaitant améliorer la sécurité de ses systèmes.
 
 Pour en savoir plus sur l'objectif et les fonctionnalités de l'outil, consultez la [page d'introduction](documentation/introduction.md).
 
@@ -30,10 +30,13 @@ Pour en savoir plus sur l'objectif et les fonctionnalités de l'outil, consultez
 
 ### Installation
 
-Pour utiliser l'**Outil de Pentest**, vous devez disposer d'un environnement Python fonctionnel sur votre système. Suivez ces étapes pour l'installation :
+Pour utiliser MAPSEC, vous devez disposer d'un environnement Python fonctionnel sur votre système. Suivez ces étapes pour l'installation :
 
 1. Téléchargez le code source de l'outil à partir du référentiel GitHub.
-2. Assurez-vous que Python (version recommandée) est installé sur votre système.
+```
+git clone https://github.com/1n0xe/mapsec
+```
+2. Assurez-vous que Python est installé sur votre système.
 3. Ouvrez un terminal dans le répertoire contenant le code source.
 4. Exécutez le programme en entrant la commande `python main.py`.
 
@@ -83,27 +86,9 @@ Les fichiers `detection.py` et `exploitation.py` sont conçus pour être personn
 
 Pour des détails complets sur les détails techniques de l'outil, consultez la [page des détails techniques](documentation/details_techniques.md).
 
-## Pour Aller Plus Loin
-
-### Création d'une Version Plus Complète
-
-Pour aller plus loin avec l'**Outil de Pentest**, envisagez de créer une version plus complète destinée aux professionnels de la sécurité et aux entreprises. Cette version pourrait inclure une base de données de vulnérabilités mise à jour, des intégrations tierces et la prise en charge d'environnements complexes.
-
-### Fonctionnalités Supplémentaires
-
-Pour enrichir l'expérience des utilisateurs, ajoutez des fonctionnalités telles que la prise en charge de nouvelles étapes de test, la génération de rapports automatisés et la collaboration entre équipes.
-
-### Marketing
-
-Promouvez l'outil en créant un site Web dédié, en organisant des webinaires et en partageant des ressources éducatives. Établissez des partenariats avec des entreprises de cybersécurité pour augmenter la visibilité de l'outil.
-
-### Version Payante
-
-Envisagez de proposer une version payante de l'outil qui offre des fonctionnalités avancées, telles que des commandes exactes pour chaque outil, des scénarios de test pré-configurés et une assistance technique prioritaire.
-
 ---
 
-L'**Outil de Pentest** est un projet en évolution constante. Votre contribution, vos idées et vos commentaires sont les bienvenus pour améliorer l'outil et en faire une ressource précieuse pour les professionnels de la sécurité informatique.
+**MAPSEC** est un projet en évolution constante. Votre contribution, vos idées et vos commentaires sont les bienvenus pour améliorer l'outil et en faire une ressource précieuse pour les professionnels de la sécurité informatique.
 
 Pour des détails complets sur l'outil, veuillez consulter la documentation détaillée dans le répertoire [documentation](documentation/).
 
